@@ -1,4 +1,6 @@
 <ul>
+<%= paginate @events %>
+
 <% @events.each do |event| %>
 	<li>
 		<%= event.name %>
