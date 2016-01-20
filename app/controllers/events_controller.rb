@@ -14,6 +14,10 @@ class EventsController < ApplicationController
 		redirect_to :action => :index
 	end
 
+	def show
+		@event = Event.find(params[:id])
+	end
+
 	private
 
 	def event_params
