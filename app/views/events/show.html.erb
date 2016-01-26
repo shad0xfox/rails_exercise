@@ -4,3 +4,7 @@
 <% Rails.logger.debug(" event: #{@event.inspect}") %>
 
 <p><%= link_to 'Back to index' ,  events_path %> </p>
+
+
+<p>Category: <%= @event.category.try(:name) %></p>
+<%= @event.category %>
